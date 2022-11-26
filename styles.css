@@ -1,0 +1,17 @@
+
+header nav div .navbar-brand{ 
+    color: beige !important;
+}
+
+.jumbotron {
+    background: rgb(7, 42, 84)
+}
+
+.btn-plan {
+    border-color: white;
+    color: #ffffff;
+}
+
+.btn-plan:hover {
+    color: white !important;
+  }
