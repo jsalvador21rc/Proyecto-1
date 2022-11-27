@@ -1,4 +1,7 @@
-
+main{
+    margin: 0;
+    padding: 0;
+}
 header nav div .navbar-brand{ 
     color: beige !important;
 }
@@ -23,10 +26,12 @@ header nav div .navbar-brand{
 }
 
 #grid{
-    flex-wrap: wrap;
+    width: auto;
+    max-width: 1200px;
+    margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(3,432px);
-    grid-template-rows: repeat(2,432px);
+    grid-template-columns: repeat(3, 1fr );
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: "uno dos tres"
                           "cuatro cinco seis";
 
@@ -65,29 +70,71 @@ header nav div .navbar-brand{
 .messi{
 width: 400px;
 height: 400px;
+padding: 20px;
 }
 
 .jordan{
     width: 400px;
     height: 400px;
+    padding: 20px;
 }
 
 .nadal{
     width: 400px;
     height: 400px;
+    padding: 20px;
 }
 
 .ronaldo{
     width: 400px;
     height: 400px;
+    padding: 20px;
 }
 
 .lebron{
     width: 400px;
     height: 400px;
+    padding: 20px;
 }
 
 .ronaldinho{
     width: 400px;
     height: 400px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+#grid {grid-column: 1/-1;}
+}
+
+
+@media screen and (max-width: 667px) {
+    #grid {
+        grid-template-columns: repeat(1, 1fr );
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "uno"
+                         "dos" 
+                         "tres"
+                         "cuatro"
+                         "cinco"
+                         "seis";
+    }
+    }
+
+.adicional {
+    background-color: rgba(47, 1, 108, 0.933);
+}
+
+@media screen and (min-width: 200px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+img, svg {
+    vertical-align: middle;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 }
