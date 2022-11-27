@@ -4,7 +4,7 @@ header nav div .navbar-brand{
 }
 
 .jumbotron {
-    background: rgb(7, 42, 84)
+    background: rgb(7, 42, 84);
 }
 
 .btn-plan {
@@ -23,14 +23,71 @@ header nav div .navbar-brand{
 }
 
 #grid{
-
+    flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(2,200px);
-    grid-template-areas: "uno dos"
+    grid-template-columns: repeat(3,432px);
+    grid-template-rows: repeat(2,432px);
+    grid-template-areas: "uno dos tres"
+                          "cuatro cinco seis";
 
-                          "tres cuatro"
+}
 
-                          "cinco seis";
+.uno{
+    grid-area: uno;
+    text-align: center;
+}
+   
+.dos{
+       grid-area: dos;
+       text-align: center;
+}
+   
+.tres{
+       grid-area: tres;
+       text-align: center;
+}
+   
+.cuatro{
+       grid-area: cuatro;
+       text-align: center;
+}
+   
+.cinco{
+       grid-area: cinco;
+       text-align: center;
+}
+   
+.seis{
+       grid-area: seis;
+        text-align: center;
+}
 
+.messi{
+width: 400px;
+height: 400px;
+}
+
+.jordan{
+    width: 400px;
+    height: 400px;
+}
+
+.nadal{
+    width: 400px;
+    height: 400px;
+}
+
+.ronaldo{
+    width: 400px;
+    height: 400px;
+}
+
+.lebron{
+    width: 400px;
+    height: 400px;
+}
+
+.ronaldinho{
+    width: 400px;
+    height: 400px;
 }
